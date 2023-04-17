@@ -9,12 +9,5 @@ Install this module from odoo apps list
 First, user need to have accessright (atleast "Player" access right) to play this game.
  - To start game, go to configuration -> table -> start table
  - To stop game, go to configuration -> table -> stop table
- ![image](https://user-images.githubusercontent.com/34482730/232408153-718cce28-9d9e-45bf-b9f8-36f2db1ee7ec.png)
-
-
-Enjoy -))
-![image](https://user-images.githubusercontent.com/34482730/232408304-1aae33f4-cd18-4f81-95c9-74159aeccfa6.png)
-
-
-
-
+ 
+ Enjoy in dashboard -))
