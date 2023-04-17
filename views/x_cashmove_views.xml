@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="x_cashmove_view_tree" model="ir.ui.view">
+        <field name="name">x_cashmove_view_tree</field>
+        <field name="model">x.cashmove</field>
+        <field name="arch" type="xml">
+            <tree string="x_cashmove_tree">
+                <field name="user_id"/>
+                <field name="amount"/>
+                <field name="state" decoration-muted="state == 'draft'" decoration-warning="state == 'wait'" decoration-success="state == 'approved'" decoration-danger="state == 'rejected'" widget="badge"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="x_cashmove_view_form" model="ir.ui.view">
+        <field name="name">x_cashmove_view_form</field>
+        <field name="model">x.cashmove</field>
+        <field name="arch" type="xml">
+            <form string="Cash move">
+                <header>
+                    <button name="action_send_request" string="Send request" type="object" states="draft" class="btn-primary" data-hotkey="s"/>
+                    <button name="action_approve" string="Approve" type="object" states="wait" class="btn-primary" data-hotkey="a" groups="shrimp_crab_fish.group_shrimp_crab_fish_manager"/>
+                    <button name="open_reject_popup" string="Reject" type="object" states="wait" class="btn-secondary" data-hotkey="r" groups="shrimp_crab_fish.group_shrimp_crab_fish_manager"/>
+                    <button name="action_back_to_draft" string="Back to draft" type="object" states="rejected" class="btn-primary" data-hotkey="b"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,wait,approved"/>
+                </header>
+                <sheet>
+                    <div role="alert" class="alert alert-warning text-center" attrs="{'invisible': [('state', '!=', 'rejected')]}" title="Rejected">
+                        <span class="fa fa-exclamation-triangle"/>
+                        <field name="reason" nolabel="1" readonly="1"/>
+                    </div>
+                    <group>
+                        <field name="user_id"/>
+                        <field name="amount"/>
+                        <field name="image" widget="image"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="x_cashmove_reject_view_form" model="ir.ui.view">
+        <field name="name">x_cashmove_reject_view_form</field>
+        <field name="model">x.cashmove</field>
+        <field name="priority">1000</field>
+        <field name="arch" type="xml">
+            <form string="Cash move">
+                <sheet>
+                    <group>
+                        <field name="reason"/>
+                    </group>
+                </sheet>
+                <footer>
+                    <button string="Save" name="action_reject" type="object" class="oe_highlight"/>
+                    <button string="Cancel" class="btn btn-default" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="x_cashmove_filter" model="ir.ui.view">
+        <field name="name">x.cashmove</field>
+        <field name="model">x.cashmove</field>
+        <field name="arch" type="xml">
+            <search string="Search cash move">
+                <field name="user_id" string="User"/>
+                <filter string="Waiting for approve" name="wait" domain="[('state', '=', 'wait')]" help="Wait to approve"/>
+                <group expand="0" string="Group By">
+                    <filter string="Status" name="state" context="{'group_by': 'state'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="x_cashmove_action" model="ir.actions.act_window">
+        <field name="name">Cash move</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">x.cashmove</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="shrimp_crab_fish.all_bet_popup" owl="1">
+        <t t-set="result_mapping" t-value="{'s': 'shrimp', 'c': 'crab', 'f': 'fish', 'd': 'deer', 'g': 'gourd', 'r': 'rooster'}"/>
+        <div class="all-bet-popup">
+            <table>
+                <thead>
+                    <tr t-on-click="toggle">
+                        <th>User</th>
+                        <th>Bet Result</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody t-if="state.isShow">
+                    <t t-set="bet_line_ids" t-value="props.state.allBet"/>
+                    <t t-foreach="bet_line_ids" t-as="bet_line_id" t-key="bet_line_id['id']">
+                        <tr>
+                            <td><t t-esc="bet_line_id['user_id'][1]"/></td>
+                            <td><img t-attf-src="shrimp_crab_fish/static/src/image/result_{{result_mapping[bet_line_id['bet_result']]}}.png"/></td>
+                            <td><t t-esc="bet_line_id['bet_amount'].toLocaleString()"/></td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+        </div>
+    </t>
+</templates>

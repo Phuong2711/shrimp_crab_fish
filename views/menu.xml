@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="shrimp_crab_fish_root" name="Shrimp crab fish" web_icon="shrimp_crab_fish,static/description/icon.png" sequence="0">
+        <menuitem id="x_dashboard_menuitem" name="Dashboard" sequence="0" action="action_shrimp_crab_fish_dashboard" groups="shrimp_crab_fish.group_shrimp_crab_fish_player"/>
+        <menuitem id="x_cashmove_menuitem" name="Cash move" sequence="10" action="shrimp_crab_fish.x_cashmove_action" groups="shrimp_crab_fish.group_shrimp_crab_fish_player"/>
+        <menuitem id="configuration_category" sequence="20" name="Configuration" groups="shrimp_crab_fish.group_shrimp_crab_fish_manager">
+            <menuitem id="x_table_menuitem" name="Table" sequence="0" action="x_table_action"/>
+        </menuitem>
+    </menuitem>
+</odoo>

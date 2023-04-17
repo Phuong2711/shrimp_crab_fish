@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="shrimp_crab_fish.player_detail" owl="1">
+        <div class="scf_player_detail">
+            <span><t t-esc="this.props.user.userName"/></span><br/>
+            Balance: <span><t t-esc="this.props.user.balance.toLocaleString()"/></span>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="shrimp_crab_fish.bow" owl="1">
+        <t t-set="mapping_value" t-value="{'s': 'shrimp', 'c': 'crab', 'f': 'fish', 'd': 'deer', 'g': 'gourd', 'r': 'rooster', 'u': 'underfined'}"/>
+        <div class="scf_circle_countdown">
+            <span t-att-class="this.props.time >= 10 ? 'countdown_blue' : 'countdown_red'"><t t-esc="this.props.time"/></span>
+        </div>
+        <div class="plate">
+            <img id="result-1" t-attf-src="/shrimp_crab_fish/static/src/image/result_{{mapping_value[props.r1]}}.png"/>
+            <img id="result-2" t-attf-src="/shrimp_crab_fish/static/src/image/result_{{mapping_value[props.r2]}}.png"/>
+            <img id="result-3" t-attf-src="/shrimp_crab_fish/static/src/image/result_{{mapping_value[props.r3]}}.png"/>
+            <img id="bow" t-attf-src="/shrimp_crab_fish/static/src/image/bow.png" t-att-class="{
+                    'bow-shaking': this.props.time &lt; 11 and this.props.time &gt; 8 ,
+                    'bow-opening': this.props.time == 0 or this.props.time &gt; 15,
+                }"/>
+        </div>
+    </t>
+</templates>

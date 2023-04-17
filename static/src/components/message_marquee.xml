@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="shrimp_crab_fish.message_marquee" owl="1">
+        <div class="scf_message_marquee">
+            <marquee width="100%" direction="left">
+                <t t-esc="this.props.message"/>
+            </marquee>
+        </div>
+    </t>
+</templates>

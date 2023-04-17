@@ -1,0 +1,88 @@
+.scf_circle_countdown{
+  font-weight: bold;
+  text-align:center;
+  text-align: center;
+  font-size: 15px;
+}
+.countdown_blue {
+  color: #51A3B8;
+}
+.countdown_red {
+  color: #b52b47;
+}
+.plate {
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  position: relative;
+  background-image: url('/shrimp_crab_fish/static/src/image/plate.png');
+
+  #result-1{
+  width: 25px;
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  }
+
+  #result-2 {
+  width: 25px;
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  }
+
+  #result-3 {
+  width: 25px;
+  position: absolute;
+  top: 58%;
+  left: 38%;}
+}
+
+#bow{
+  border: none;
+  width: 150px;
+  cursor: grabbing;
+  z-index: 12;
+  position: absolute;
+  top: -8px;
+}
+.bow-shaking{
+  animation: shaking 0.15s 13;
+  animation-fill-mode: forwards;
+}
+.bow-opening{
+  animation: opening 7s 1;
+  animation-fill-mode: forwards;
+}
+@keyframes shaking {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(5px, 5px) rotate(5deg); }
+  50% { transform: translate(0, 0) rotate(0deg); }
+  75% { transform: translate(-5px, 5px) rotate(-5deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes opening {
+  0% { transform: translate(0px, 0px); }
+  3% { transform: translate(-5px, -5px); }
+  6% { transform: translate(-10px, -10px); }
+  9% { transform: translate(-15px, -15px); }
+  12% { transform: translate(-20px, -20px); }
+  15% { transform: translate(-25px, -25px); }
+  18% { transform: translate(-30px, -30px); }
+  21% { transform: translate(-35px, -35px); }
+  24% { transform: translate(-40px, -40px); }
+  27% { transform: translate(-45px, -45px); }
+  30% { transform: translate(-50px, -50px); }
+  33% { transform: translate(-55px, -55px); }
+  36% { transform: translate(-60px, -60px); }
+  39% { transform: translate(-65px, -65px); }
+  42% { transform: translate(-70px, -70px); }
+  45% { transform: translate(-75px, -75px); }
+  48% { transform: translate(-80px, -80px); }
+  51% { transform: translate(-85px, -85px); }
+  53% { transform: translate(-90px, -90px); }
+  100% { transform: translate(-90px, -90px); }
+}

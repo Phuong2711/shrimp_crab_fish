@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="shrimp_crab_fish.home_page" owl="1">
+        <PlayerDetail user="state.user"/>
+        <MessageMarquee message="state.table.message"/>
+        <div style="display:flex;">
+            <div style="width:50%;margin:auto;">
+                <CircleCountdown time="state.table.currentTime" r1="state.table.r1" r2="state.table.r2" r3="state.table.r3"/>
+                <GameBoard state="state"/>
+                <BoardButton state="state"/>
+            </div>
+            <div style="width:300px;margin:150px 20px 0px 0px;">
+                <AllBetPopup state="state"/>
+            </div>
+        </div>
+    </t>
+</templates>

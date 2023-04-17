@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="shrimp_crab_fish.GameBoard" owl="1">
+        <div class="game-board">
+            <table>
+                <tr>
+                    <td><img t-attf-src="/shrimp_crab_fish/static/src/image/deer.png" t-on-click="_onClickDeer"/><br/><t t-esc="props.state.tempBet.d.toLocaleString()"/></td>
+                    <td><img t-attf-src="/shrimp_crab_fish/static/src/image/gourd.png" t-on-click="_onClickGourd"/><br/><t t-esc="props.state.tempBet.g.toLocaleString()"/></td>
+                    <td><img t-attf-src="/shrimp_crab_fish/static/src/image/rooster.png" t-on-click="_onClickRooster"/><br/><t t-esc="props.state.tempBet.r.toLocaleString()"/></td>
+                </tr>
+                <tr>
+                    <td><img t-attf-src="/shrimp_crab_fish/static/src/image/fish.png" t-on-click="_onClickFish"/><br/><t t-esc="props.state.tempBet.f.toLocaleString()"/></td>
+                    <td><img t-attf-src="/shrimp_crab_fish/static/src/image/crab.png" t-on-click="_onClickCrab"/><br/><t t-esc="props.state.tempBet.c.toLocaleString()"/></td>
+                    <td><img t-attf-src="/shrimp_crab_fish/static/src/image/shrimp.png" t-on-click="_onClickShrimp"/><br/><t t-esc="props.state.tempBet.s.toLocaleString()"/></td>
+                </tr>
+            </table>
+        </div>
+    </t>
+</templates>

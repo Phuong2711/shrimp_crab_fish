@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="x_table_view_tree" model="ir.ui.view">
+        <field name="name">x_table_view_tree</field>
+        <field name="model">x.table</field>
+        <field name="arch" type="xml">
+            <tree string="x_table_tree" create="0" delete="0" export_xlsx="0">
+                <field name="name"/>
+                <field name="time_per_round"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="x_table_view_form" model="ir.ui.view">
+        <field name="name">x_table_view_form</field>
+        <field name="model">x.table</field>
+        <field name="arch" type="xml">
+            <form string="Table">
+                <header>
+                    <button name="action_start_table" string="Start table" type="object" class="btn-primary"/>
+                    <button name="action_stop_table" string="Stop table" type="object" class="btn-secondary"/>
+                    <field name="state" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="time_per_round"/>
+                        <field name="message" placeholder="This message will be show in dashboard"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="x_table_action" model="ir.actions.act_window">
+        <field name="name">Table Configuration</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">x.table</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+</odoo>

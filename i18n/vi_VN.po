@@ -1,0 +1,251 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* shrimp_crab_fish
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e-20230407\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-17 02:12+0000\n"
+"PO-Revision-Date: 2023-04-17 02:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: shrimp_crab_fish
+#. odoo-javascript
+#: code:addons/shrimp_crab_fish/static/src/components/all_bet_popup.xml:0
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_cashmove__amount
+#, python-format
+msgid "Amount"
+msgstr "Số tiền"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_view_form
+msgid "Approve"
+msgstr "Phê duyệt"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_view_form
+msgid "Back to draft"
+msgstr "Quay lại bản thảo"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_res_users__x_balance
+msgid "Balance"
+msgstr "Số dư"
+
+#. module: shrimp_crab_fish
+#. odoo-javascript
+#: code:addons/shrimp_crab_fish/static/src/components/player_detail.xml:0
+#, python-format
+msgid "Balance:"
+msgstr "Số dư:"
+
+#. module: shrimp_crab_fish
+#. odoo-javascript
+#: code:addons/shrimp_crab_fish/static/src/components/board_button.xml:0
+#, python-format
+msgid "Bet"
+msgstr "Đặt cược"
+
+#. module: shrimp_crab_fish
+#. odoo-javascript
+#: code:addons/shrimp_crab_fish/static/src/components/all_bet_popup.xml:0
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_bet_line__bet_result
+#, python-format
+msgid "Bet Result"
+msgstr "Đặt cược"
+
+#. module: shrimp_crab_fish
+#. odoo-javascript
+#: code:addons/shrimp_crab_fish/static/src/components/board_button.xml:0
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_reject_view_form
+#, python-format
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: shrimp_crab_fish
+#: model:res.groups,name:shrimp_crab_fish.group_shrimp_crab_fish_manager
+msgid "Casino Owner"
+msgstr "Quản lý casino"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields.selection,name:shrimp_crab_fish.selection__x_table__state__c
+msgid "Close"
+msgstr "Đóng"
+
+#. module: shrimp_crab_fish
+#: model:ir.ui.menu,name:shrimp_crab_fish.configuration_category
+msgid "Configuration"
+msgstr "Cấu hình"
+
+#. module: shrimp_crab_fish
+#: model:ir.ui.menu,name:shrimp_crab_fish.x_dashboard_menuitem
+msgid "Dashboard"
+msgstr "Trang chủ"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields.selection,name:shrimp_crab_fish.selection__x_cashmove__state__draft
+msgid "Draft"
+msgstr "Bản thảo"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_cashmove__image
+msgid "Image"
+msgstr "Hình ảnh"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_table__message
+msgid "Message"
+msgstr "Tin nhắn"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_table__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields.selection,name:shrimp_crab_fish.selection__x_table__state__o
+msgid "Open"
+msgstr "Mở"
+
+#. module: shrimp_crab_fish
+#: model:res.groups,name:shrimp_crab_fish.group_shrimp_crab_fish_player
+msgid "Player"
+msgstr "Người chơi"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_cashmove__reason
+msgid "Reason"
+msgstr "Lý do từ chối"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_view_form
+msgid "Reject"
+msgstr "Từ chối"
+
+#. module: shrimp_crab_fish
+#. odoo-python
+#: code:addons/shrimp_crab_fish/models/x_cashmove.py:0
+#, python-format
+msgid "Reject request"
+msgstr "Từ chối yêu cầu"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields.selection,name:shrimp_crab_fish.selection__x_cashmove__state__rejected
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_view_form
+msgid "Rejected"
+msgstr "Đã từ chối"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_reject_view_form
+msgid "Save"
+msgstr "Lưu"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_view_form
+msgid "Send request"
+msgstr "Gửi yêu cầu"
+
+#. module: shrimp_crab_fish
+#: model:ir.actions.client,name:shrimp_crab_fish.action_shrimp_crab_fish_dashboard
+#: model:ir.module.category,name:shrimp_crab_fish.shrimp_crab_fish_category
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.view_users_form_simple_modif_inherit
+msgid "Shrimp Crab Fish"
+msgstr "Tôm cua cá"
+
+#. module: shrimp_crab_fish
+#: model:ir.ui.menu,name:shrimp_crab_fish.shrimp_crab_fish_root
+msgid "Shrimp crab fish"
+msgstr "Tôm cua cá"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_table_view_form
+msgid "Start table"
+msgstr "Bắt đầu"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_table_view_form
+msgid "Stop table"
+msgstr "Kết thúc"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_bet_line__table_id
+#: model:ir.ui.menu,name:shrimp_crab_fish.x_table_menuitem
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_table_view_form
+msgid "Table"
+msgstr "Bàn"
+
+#. module: shrimp_crab_fish
+#: model:ir.actions.act_window,name:shrimp_crab_fish.x_table_action
+msgid "Table Configuration"
+msgstr "Cấu hình bàn"
+
+#. module: shrimp_crab_fish
+#. odoo-python
+#: code:addons/shrimp_crab_fish/models/res_users.py:0
+#: model:ir.model.constraint,message:shrimp_crab_fish.constraint_res_users_check_x_balance_not_negative
+#, python-format
+msgid "The balance cannot be negative."
+msgstr "Bạn không thể thao tác với số tiền vượt quá số dư."
+
+#. module: shrimp_crab_fish
+#. odoo-javascript
+#: code:addons/shrimp_crab_fish/static/src/components/all_bet_popup.xml:0
+#: model:ir.model,name:shrimp_crab_fish.model_res_users
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_bet_line__user_id
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_cashmove__user_id
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_filter
+#, python-format
+msgid "User"
+msgstr "Người dùng"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields.selection,name:shrimp_crab_fish.selection__x_cashmove__state__wait
+msgid "Wait auditing"
+msgstr "Đợi xét duyệt"
+
+#. module: shrimp_crab_fish
+#. odoo-python
+#: code:addons/shrimp_crab_fish/models/x_cashmove.py:0
+#, python-format
+msgid "You only can delete record in draft state!"
+msgstr "Bạn chỉ có thể xóa bản ghi ở trạng thái bản thảo!"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields.selection,name:shrimp_crab_fish.selection__x_cashmove__state__approved
+msgid "approved"
+msgstr "Đã phê duyệt"
+
+#. module: shrimp_crab_fish
+#: model:ir.actions.act_window,name:shrimp_crab_fish.x_cashmove_action
+#: model:ir.ui.menu,name:shrimp_crab_fish.x_cashmove_menuitem
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_reject_view_form
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_view_form
+msgid "Cash move"
+msgstr "Chuyển tiền"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_table__time_per_round
+msgid "Time per round"
+msgstr "Thời gian mỗi ván"
+
+#. module: shrimp_crab_fish
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_cashmove__state
+#: model:ir.model.fields,field_description:shrimp_crab_fish.field_x_table__state
+msgid "State"
+msgstr "Trạng thái"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_filter
+msgid "Status"
+msgstr "Trạng thái"
+
+#. module: shrimp_crab_fish
+#: model_terms:ir.ui.view,arch_db:shrimp_crab_fish.x_cashmove_filter
+msgid "Waiting for approve"
+msgstr "Cần xét duyệt"
